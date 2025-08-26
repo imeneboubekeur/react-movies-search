@@ -1,0 +1,219 @@
+/*:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}*/
+
+/*a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}*/
+
+/*body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #240A52;
+  margin: 0;
+
+}
+
+.main {
+  overflow-y: auto;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.movies {
+  color: white;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 2fr));
+  align-items: end;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.elements {
+  /*display:inline-block;*/
+  display: flex;
+  flex-direction: column;
+  border-radius: black 100px;
+}
+
+.elements img {
+  border-radius: 10px 10px 0px 0px;
+
+}
+
+.title {
+  text-align: center;
+  padding: 10px;
+  border-radius: 0px 0px 10px 10px;
+  background-color: #7530ad;
+  white-space: nowrap;
+  /* keep text in one line */
+  overflow: hidden;
+  /* hide the overflow */
+  text-overflow: ellipsis;
+}
+
+.searchBar {
+  text-decoration: none;
+  width: 80%;
+  height: 37px;
+  margin: 0 auto;
+}
+
+.searchBar input[type="text"] {
+  padding-left: 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  background-color: #240A52;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.container {
+  display: flex;
+  justify-content: right;
+
+}
+
+.overlay {
+  overflow-y: auto;
+  /* allow scrolling inside the overlay */
+  animation: opacity 0.4s ease-in-out forwards;
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.brand {
+  color: #b952f5;
+}
+
+.app {
+  overflow-y: auto;
+}
+.overlay.hide {
+  animation: fadeOutDown 0.4s ease forwards;
+}
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOutDown {
+  from {
+    opacity: 1;
+    /*transform: translateY(0);*/
+  }
+  to {
+    opacity: 0;
+    /*transform: translateY(20px);*/
+  }
+}
+.material-symbols-outlined {
+  background-color: transparent;
+
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  /* makes it look clickable */
+  transition: color 0.3s;
+  /* smooth color change */
+}
+
+.material-symbols-outlined:hover {
+  color: red;
+  /* color on hover */
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.search {
+  padding: 8px;
+  font-size: 24px;
+  font-weight: 1000;
+  border-radius: 30px;
+  color: white;
+  background-color: #7530ada6;
+}
+
+.search:hover {
+  background-color: white;
+  color: #7530ad;
+}
